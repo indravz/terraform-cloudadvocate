@@ -1,1 +1,1 @@
-${backend_ip} is for my ${backend_servicename}
+${db_name} is for my ${db_port}

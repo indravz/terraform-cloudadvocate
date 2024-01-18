@@ -6,8 +6,8 @@ module "webapp_resources" {
   tag_prefix_name = "webapp"
   environment     = "development"
   public-key      = file("${path.module}/resources/webapp-key.pub")
-  user-data       = templatefile("${path.module}/resources/backend_userdata.tpl", {
-    instance_id = module.backend_resources.instance_id
+  user-data       = templatefile("${path.module}/resources/frontend_userdata.tpl", {
+    backend_instance_id = module.backend_resources.instance_id
   })
   ami_id          = var.ami-id
   instance_type   = var.instance-type

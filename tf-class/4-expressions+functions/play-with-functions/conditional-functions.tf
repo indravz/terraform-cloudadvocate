@@ -1,3 +1,4 @@
+/*
 locals {
   nullable_value = null
   map_example = {
@@ -33,3 +34,4 @@ resource "aws_instance" "example_instance_2" {
   user_data = coalesce(var.optional_variable, "default_user_data_script")
 }
 
+*/

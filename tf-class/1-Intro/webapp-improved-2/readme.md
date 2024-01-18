@@ -69,7 +69,7 @@ Fine-tune settings such as resource creation, updates, and deletions using these
    ```bash
    terraform show
    ```
-10. Modify the seucurity group port from 8080 to 8081 ( demonstrating applying resource changes):
+10. Modify the security group port from 8080 to 8081 ( demonstrating applying resource modifications):
    ```bash
    terraform plan
    ```
