@@ -1,5 +1,3 @@
-Certainly! Here is the updated `readme.md` format without bullets for subheadings under the main heading and with consolidated subheadings under Map and Object:
-
 ```markdown
 # Understanding Terraform Variable Types
 
