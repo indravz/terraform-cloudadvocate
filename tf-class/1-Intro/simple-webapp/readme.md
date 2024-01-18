@@ -52,7 +52,7 @@ terraform init -upgrade
 terraform fmt
 ```
 
-8. Validate Terraform configuration:
+8. Validate Terraform configuration for any syntax errors:
 
 ```bash
 terraform validate

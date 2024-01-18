@@ -2,9 +2,9 @@ provider "aws" {
   region = "us-east-2"
 }
 
-provider "google" {
+/*provider "google" {
   region = "us-central1"
-}
+}*/
 
 resource "aws_instance" "web" {
   ami           = "ami-05803413c51f242b7"
