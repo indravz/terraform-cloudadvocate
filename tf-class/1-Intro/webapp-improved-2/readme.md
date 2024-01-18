@@ -69,8 +69,17 @@ Fine-tune settings such as resource creation, updates, and deletions using these
    ```bash
    terraform show
    ```
+10. Modify the seucurity group port from 8080 to 8081 ( demonstrating applying resource changes):
+   ```bash
+   terraform plan
+   ```
+   Observe the modifications in the plan ( with +/-)
 
-10. Destroy the resources:
+11. Apply a saved execution plan (dry-run):
+   ```bash
+   terraform apply "dry-run-v1"
+   ```
+12. Destroy the resources:
    ```bash
    terraform destroy
    ```

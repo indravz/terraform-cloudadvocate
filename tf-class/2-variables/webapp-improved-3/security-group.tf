@@ -56,24 +56,24 @@ resource "aws_security_group_rule" "dev_backend_allow_ssh" {
 }
 
 resource "aws_security_group_rule" "dev_backend_allow_app" {
-  security_group_id = aws_security_group.dev_backend_sg.id
 
   type        = "ingress"
   from_port   = 8080
   to_port     = 8080
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
+  security_group_id = aws_security_group.dev_backend_sg.id
 }
 
 resource "aws_security_group_rule" "allow_additional_backend_ports" {
-  security_group_id = aws_security_group.dev_backend_sg.id
+  for_each = var.allowed_additional_backend_ports
 
   type        = "ingress"
   from_port   = each.value #var.allowed_additional_backend_ports[count.index]
   to_port     = each.value #var.allowed_additional_backend_ports[count.index]
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
+  security_group_id = aws_security_group.dev_backend_sg.id
 
-  for_each = var.allowed_additional_backend_ports
 }
 

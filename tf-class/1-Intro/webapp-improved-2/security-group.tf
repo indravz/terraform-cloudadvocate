@@ -24,8 +24,8 @@ resource "aws_security_group_rule" "dev_allow_http" {
   security_group_id = aws_security_group.dev_web_sg.id
 
   type        = "ingress"
-  from_port   = 8080
-  to_port     = 8080
+  from_port   = 8080    #8081
+  to_port     = 8080    #8081
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 }

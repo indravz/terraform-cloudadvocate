@@ -7,3 +7,8 @@ output "instance_ids" {
   description = "IDs of the created instance"
   value       = aws_instance.webapp.id
 }
+
+output "subnets_backend" {
+  description = "IDs of the created instance"
+  value       = aws_subnet.backend_subnets[*].id
+}
