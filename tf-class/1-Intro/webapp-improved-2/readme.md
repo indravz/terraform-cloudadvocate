@@ -26,6 +26,7 @@ Fine-tune settings such as resource creation, updates, and deletions using these
 
 1. Create a dry-run execution plan and save it to a file:
    ```bash
+   terraform init
    terraform plan -out="dry-run-v1"
    ```
 
@@ -67,5 +68,10 @@ Fine-tune settings such as resource creation, updates, and deletions using these
 9. Display details of the current Terraform state:
    ```bash
    terraform show
+   ```
+
+10. Destroy the resources:
+   ```bash
+   terraform destroy
    ```
 ```
