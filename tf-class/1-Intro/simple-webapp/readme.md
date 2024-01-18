@@ -5,12 +5,12 @@ This repository contains Terraform scripts to set up a simple web application. F
 
 ## Prerequisites
 
-   ```bash
+   ```
    alias tf=terraform
       ```
 
 1. Create an IAM role for Terraform and set the following environment variables:
-   ```bash
+   ```
    export AWS_DEFAULT_REGION="us-east-2"
    export AWS_SECRET_ACCESS_KEY=<your_secret_access_key>
    export AWS_ACCESS_KEY_ID=<your_access_key_id>
