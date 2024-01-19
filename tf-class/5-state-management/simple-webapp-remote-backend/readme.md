@@ -1,0 +1,1 @@
+Run plan from two different places and demonstrate lock ( record in dynamodb)
