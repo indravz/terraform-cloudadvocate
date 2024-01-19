@@ -5,7 +5,7 @@ Explore different variable types in Terraform.
 
 ## Simple Variables
 
-### Number
+### Number  
 Define numeric variables for use in your Terraform configurations. Example:
 ```hcl
 variable "example_number" {
